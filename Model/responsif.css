@@ -1,0 +1,119 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .garis-3 {
+        gap: 1rem;
+    }
+    .skill-kanan ul li {
+        font-size: 0.9rem;
+    }
+}
+ @media screen and (max-width: 825px) {
+    /* burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .toggle-burger .line-1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+    .toggle-burger .line-2 {
+        opacity: 0;
+    }
+    .toggle-burger .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+     /* navigation */
+     nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--BackgroundUtama);
+        border-left: 1px solid var(--BorderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+     }
+     nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+     }
+     .nav-active {
+        transform: translateX(0);
+     }
+     :root {
+        --sectionPadding: 4rem 0;
+     }
+     .section-judul {
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+     }
+     .pre-judul {
+        font-size: 0.8rem;
+     }
+
+     /* Diri */
+     #seorang {
+        grid-template-columns: 1fr;
+        height: fit-content;
+     }
+     .sebelah-kanan {
+        order: -1;
+     }
+     .sebelah-kanan img {
+        width: 70%;
+     }
+     .sebelah-kiri {
+        text-align: center;
+        padding-bottom: 5rem;
+     }
+     .sebelah-kiri .pre-judul {
+        margin: 0 auto;
+     }
+     .nama {
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+     }
+
+     /* Halaman 3 */
+     .about-me {
+        grid-template-columns: 1fr;
+        height: fit-content;
+     }
+     .kiri img {
+        width: 60%;
+     }
+     .kanan {
+        text-align: center;
+        padding: 5rem;
+     }
+     .kiri ,.pre-judul {
+        margin: 0 auto;
+     }
+
+     /* skill */
+     .skill-grid {
+        gap: 1rem;
+     }
+
+     /* Copyright */
+     footer {
+        padding: 2rem 0;
+     }
+}
+@media screen and (max-width: 640px) {
+    .section-judul {
+        font-size: 1.3rem;
+    }
+    .pre-judul {
+        font-size: 0.7rem;
+    }
+}
